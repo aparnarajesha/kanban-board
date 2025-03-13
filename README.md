@@ -1,79 +1,67 @@
-Kanban Board App
+# Kanban Board Project
 
-A simple and responsive Kanban board web application built with React, Redux, and drag-and-drop functionality.
+## Overview
+This is a **Kanban Board** built using **ReactJS**. It includes features like:
+- Four columns: **To Do, In Progress, Peer Review, Done**
+- Drag-and-drop functionality for task management
+- Task cards with a title and truncated description
+- Search bar for filtering tasks dynamically by title
+- Floating button to add new tasks (only in the 'To Do' column)
+- Task creation form with title and description
 
-Features
+## Project Setup Instructions
+### 1. Extracting Files
+Since this project is large, all files are uploaded as separate **zip** folders. Follow these steps to extract and set up:
+1. **Extract Each Folder:** Unzip each folder separately (e.g., `src.zip`, `public.zip`, `node_modules_part1.zip`, `node_modules_part2.zip`, etc.).
+2. **Combine Node Modules:** Merge all extracted `node_modules` parts into a single `node_modules` folder.
 
-✅ Four Fixed Columns: To Do, In Progress, Peer Review, Done✅ Drag & Drop Task Management✅ Add, Edit, and Delete Tasks✅ Persistent State with Redux & Local Storage✅ Search Tasks by Title✅ Attach Images to Columns✅ Responsive & User-Friendly UI
+### 2. Install Dependencies
+Once all files are extracted, navigate to the project directory and install dependencies:
+```sh
+npm install
+```
 
-Demo
+### 3. Start the Development Server
+Run the following command to start the development server:
+```sh
+npm start
+```
+The application will be available at `http://localhost:3000/`.
 
-
-
-Getting Started
-
-Prerequisites
-
-Ensure you have the following installed:
-
-Node.js
-
-npm or yarn
-
-Installation
-
-Clone the repository:
-
-
-cd kanban-board
-
-Install dependencies:
-
-npm install  # or yarn install
-
-Running the App
-
-To start the development server:
-
-npm start  # or yarn start
-
-Open http://localhost:3000 in your browser.
-
-API Integration
-
-The app fetches tasks from https://dummyjson.com/todos. You can replace it with your preferred API.
-
-Folder Structure
-
+## Folder Structure
+```
 kanban-board/
-│-- src/
-│   │-- components/      # Reusable components (TaskCard, Column, etc.)
-│   │-- redux/           # State management with Redux
-│   │-- assets/          # Images & static assets
-│   │-- utils/           # Helper functions
-│   │-- App.js           # Main app component
-│   │-- index.js         # Entry point
-│-- public/
-│-- README.md            # Documentation
-│-- package.json         # Dependencies
+│── public/            # Static assets
+│── src/               # Source code
+│   ├── components/    # React components
+│   ├── styles/        # CSS and styled-components
+│   ├── utils/         # Helper functions
+│── node_modules/      # Dependencies (Merged from multiple zip files)
+│── .gitignore         # Files to ignore in Git
+│── package.json       # Project metadata and dependencies
+│── README.md          # Project documentation
+```
 
-Deployment
+## Features & Functionality
+- **Drag-and-Drop Tasks**: Easily move tasks between columns.
+- **Search Bar**: Filter tasks by title dynamically.
+- **Task Assignment**: Each task displays an avatar.
+- **Real-time Updates**: Updates task status on the fly.
 
-Build and deploy the project:
+## Technologies Used
+- **Frontend**: ReactJS, Styled-Components
+- **State Management**: React Hooks
+- **Drag & Drop**: react-beautiful-dnd
+- **UI Components**: Ant Design
 
-npm run build  # or yarn build
+## Contribution & Issues
+If you'd like to contribute, feel free to fork this repo and submit a pull request. For issues, report them in the GitHub Issues section.
 
-Deploy on:
-
-Vercel: vercel --prod
-
-Netlify: netlify deploy
-
-Contributing
-
-Feel free to fork this repo and submit pull requests. Contributions are welcome!
-
-License
-
+## License
 This project is licensed under the MIT License.
+
+---
+**Happy Coding! 🚀**
+
+
 
